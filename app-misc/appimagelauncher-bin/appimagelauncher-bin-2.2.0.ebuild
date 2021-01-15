@@ -17,12 +17,8 @@ IUSE=""
 DEPEND="
 	app-arch/libarchive
 	app-arch/zstd
-	dev-libs/glib
 	dev-libs/libgcrypt
 	dev-libs/openssl
-	dev-qt/qtcore:5
-	dev-qt/qtgui:5
-	dev-qt/qtdbus:5
 	dev-qt/qtwidgets:5
 	dev-util/gtk-update-icon-cache
 	gnome-base/librsvg
@@ -30,7 +26,6 @@ DEPEND="
 	net-misc/curl
 	sys-apps/systemd
 	sys-fs/fuse
-	x11-libs/cairo
 	x11-libs/libXpm
 "
 RDEPEND="${DEPEND}"
