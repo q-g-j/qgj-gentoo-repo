@@ -4,7 +4,6 @@
 EAPI=7
 inherit linux-mod
 
-#COMMIT="f9085c8a656f48022e7985f19e7113357597e952"
 COMMIT="f9085c8a656f48022e7985f19e7113357597e952"
 
 DESCRIPTION="Realtek 88x2bu module for Linux kernel"
