@@ -43,6 +43,8 @@ RESTRICT="strip"
 src_prepare() {
 	rm -f libs/*.so* || die
 	sed -i -e '1i#include <cmath>' g_src/ttf_manager.cpp || die
+	
+	# Fix openal related segfault:
 	sed -i 's/ALenum alGetError( void ) { _alGetError(); }/ALenum alGetError( void ) { return _alGetError(); }/' g_src/music_and_sound_openal.cpp || die
 	default
 }
