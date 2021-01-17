@@ -1,5 +1,4 @@
 #!/bin/bash
-pushd /var/db/repos/qgj
-sudo chown -R portage:portage *
-sudo -u portage find . -type f -name "*.ebuild" -exec ebuild {} digest \;
-popd
+SCRIPTPATH="$( cd "$(dirname "$0")" >/dev/null 2>&1 ; pwd -P )"
+cd $SCRIPTPATH
+find . -type f -name "*.ebuild" -exec ebuild {} digest \;

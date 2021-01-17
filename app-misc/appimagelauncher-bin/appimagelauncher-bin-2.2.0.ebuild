@@ -82,16 +82,16 @@ pkg_postinst() {
 	xdg_mimeinfo_database_update
 
 	echo
-	einfo "To enable AppImage file association reboot or run as root:"
-	einfo "    systemctl restart systemd-binfmt"
-	einfo ""
-	einfo "Run the following command as any user that wants to use AppImageLauncher (not as root):"
-	einfo "    systemctl --user enable --now appimagelauncherd"
-	einfo ""
-	einfo "Usage:"
-	einfo "Just execute an AppImage file (from terminal or file browser) and the integration"
-	einfo "assistant window should pop up."
 	echo
+	elog "To enable AppImage file association reboot or run as root:"
+	elog "    systemctl restart systemd-binfmt"
+	elog ""
+	elog "Run the following command as any user that wants to use AppImageLauncher (not as root):"
+	elog "    systemctl --user enable --now appimagelauncherd"
+	elog ""
+	elog "Usage:"
+	elog "Just execute an AppImage file (from terminal or file browser) and the integration"
+	elog "assistant window should pop up."
 }
 
 pkg_postrm() {
