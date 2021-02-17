@@ -4,7 +4,7 @@
 EAPI=7
 inherit linux-mod
 
-COMMIT="f9085c8a656f48022e7985f19e7113357597e952"
+COMMIT="afc917d82f3c4306e057e42b2b4708edc1f81839"
 
 DESCRIPTION="Realtek 88x2bu module for Linux kernel"
 HOMEPAGE="https://github.com/RinCat/RTL88x2BU-Linux-Driver"
