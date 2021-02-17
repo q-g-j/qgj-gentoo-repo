@@ -1,5 +1,4 @@
-My personal small overlay for Gentoo Linux.
-Includes ebuilds for AppImageLauncher and a working driver for my TP-Link Archer T3U Wireless Adapter, which I couldn't find anywhere.
+My personal overlay for Gentoo Linux. It includes ebuilds for AppImageLauncher and a working driver for my TP-Link Archer T3U Wireless Adapter.
 
 
 Use Layman to add it to your system:
