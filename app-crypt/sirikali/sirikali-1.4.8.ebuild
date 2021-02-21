@@ -40,7 +40,7 @@ DEPEND="${RDEPEND}"
 BDEPEND="virtual/pkgconfig"
 
 DOCS=( LINUX_BUILD_INSTRUCTIONS changelog README.md )
-PATCHES=( "$FILESDIR"/sirikali-1.4.2_update_CMakeLists_file.patch )
+#PATCHES=( "$FILESDIR"/sirikali-1.4.2_update_CMakeLists_file.patch )
 
 src_unpack() {
 	default
