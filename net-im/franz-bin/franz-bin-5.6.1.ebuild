@@ -60,6 +60,11 @@ QA_PREBUILT="
 
 S="${WORKDIR}"
 
+src_prepare() {
+	eapply ${FILESDIR}/desktop-file.patch || die
+	default
+}
+
 src_install() {
 	insinto /opt
 	doins -r opt/.
@@ -73,13 +78,13 @@ src_install() {
 }
 
 pkg_postinst() {
+	xdg_icon_cache_update
 	xdg_desktop_database_update
 	xdg_mimeinfo_database_update
-	gnome2_icon_cache_update
 }
 
 pkg_postrm() {
+	xdg_icon_cache_update
 	xdg_desktop_database_update
 	xdg_mimeinfo_database_update
-	gnome2_icon_cache_update
 }
