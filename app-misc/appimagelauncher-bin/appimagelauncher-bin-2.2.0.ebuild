@@ -84,7 +84,7 @@ pkg_postinst() {
 
 	echo
 	echo
-	elog "To enable AppImage file association reboot or run as root:"
+	elog "To enable AppImage file association, reboot or run as root:"
 	elog "    systemctl restart systemd-binfmt"
 	elog ""
 	elog "Run the following command as any user that wants to use AppImageLauncher (not as root):"
@@ -93,6 +93,7 @@ pkg_postinst() {
 	elog "Usage:"
 	elog "Just execute an AppImage file (from terminal or file browser) and the integration"
 	elog "assistant window should pop up."
+	echo
 }
 
 pkg_postrm() {
