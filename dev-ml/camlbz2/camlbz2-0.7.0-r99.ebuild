@@ -13,7 +13,7 @@ SRC_URI="https://gitlab.com/irill/camlbz2/-/archive/${PV}/${P}.tar.gz"
 LICENSE="LGPL-2.1"
 SLOT="0/${PV}"
 KEYWORDS="amd64 arm arm64 ppc ppc64 x86"
-IUSE="doc +ocamlopt"
+IUSE="doc -ocamlopt" # ocamlopt: not used, only needed for an error/bug when emerging app-emulation/libguestfs
 
 DEPEND="
 	app-arch/bzip2
