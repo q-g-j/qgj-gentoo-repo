@@ -33,7 +33,7 @@ RDEPEND="
 		kde-frameworks/kwindowsystem:5
 	)
 	policykit? ( sys-auth/polkit )
-	virtual/libffi
+	dev-libs/libffi
 	x11-libs/libXau"
 
 DEPEND="${RDEPEND}"
