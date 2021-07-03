@@ -40,9 +40,11 @@ RDEPEND="${PYTHON_DEPS}
 	rdf? ( dev-python/rdflib )
 	sf2? ( media-sound/fluidsynth )
 	sndfile? ( media-libs/libsndfile )
-	vst? ( cross-x86_64-w64-mingw32/gcc )
 	X? ( x11-base/xorg-server )"
 DEPEND=${RDEPEND}
+
+BDEPEND="virtual/pkgconfig
+        vst? ( cross-x86_64-w64-mingw32/gcc )"
 
 src_prepare() {
 	sed -i -e "s|exec \$PYTHON|exec ${PYTHON}|" \
